@@ -1258,7 +1258,6 @@ en:
     contrast: Mastodon (High contrast)
     default: Mastodon (Dark)
     mastodon-light: Mastodon (Light)
-    neoncity: Neon City
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
