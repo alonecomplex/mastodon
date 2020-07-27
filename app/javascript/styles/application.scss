@@ -26,7 +26,4 @@
 @import 'mastodon/dashboard';
 @import 'mastodon/rtl';
 @import 'mastodon/accessibility';
-
-.column {
-    flex-grow: 1;
-  }
+@import 'fullwidth-media'
