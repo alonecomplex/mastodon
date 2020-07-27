@@ -2,4 +2,3 @@ default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
 witches-town: styles/witches-town.scss
-neoncity: styles/neon-city.scss
