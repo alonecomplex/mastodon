@@ -42,17 +42,6 @@
   content: "\00a0\00a0\f08e";
 }
 
-/* Let the compose area/drawer be short, but
- * expand if necessary */
-.drawer .drawer__inner {
-  overflow: visible;
-  height:inherit;
-  background-image: none;
-}
-.drawer__pager {
-  overflow-y:auto;
-}
-
 /* Put a reasonable background on the single-column compose form */
 .layout-single-column .compose-panel {
   background-color: $ui-base-color;
