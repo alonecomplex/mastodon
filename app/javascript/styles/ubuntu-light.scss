@@ -76,13 +76,15 @@ $emojis-requiring-inversion: 'chains';
   }
 }
 
-/* Let the compose area/drawer be short, but
- * expand if necessary */
- .drawer .drawer__inner {
-  overflow: visible;
-  height:inherit;
-  background-image: none;
-}
-.drawer__pager {
-  overflow-y:auto;
+/* Wider compose area */
+@media screen and (min-width: 1300px) {
+  .drawer {
+    width: 17%; /* Not part of the flex fun */
+    max-width: 400px;
+    min-width: 330px;
+  }
+  .layout-multiple-columns .column {
+    flex-grow: 1 !important;
+    max-width: 400px;
+  }
 }
