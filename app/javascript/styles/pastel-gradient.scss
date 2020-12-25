@@ -100,16 +100,3 @@ body, .activity-stream--under-tabs {
 .activity-stream .entry,.public-layout .public-account-bio, .public-layout .hero-widget__text, .directory__tag > a, .public-layout .public-account-header__bar::before, .grid-4 .landing-page__call-to-action, .contact-widget, .box-widget {
     background: transparent !important;
 }
-
-/* Wider compose area */
-@media screen and (min-width: 1300px) {
-    .drawer {
-      width: 17%; /* Not part of the flex fun */
-      max-width: 400px;
-      min-width: 330px;
-    }
-    .layout-multiple-columns .column {
-      flex-grow: 1 !important;
-      max-width: 400px;
-    }
-  }

@@ -46,3 +46,16 @@
     margin-left: -78px;
   }
 }
+
+/* Wider compose area */
+@media screen and (min-width: 1300px) {
+  .drawer {
+    width: 17%; /* Not part of the flex fun */
+    max-width: 400px;
+    min-width: 330px;
+  }
+  .layout-multiple-columns .column {
+    flex-grow: 1 !important;
+    max-width: 400px;
+  }
+}
