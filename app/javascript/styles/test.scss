@@ -1,0 +1,65 @@
+$ui-base-color: darken(#5a5a5a, 15%); // darkest #1
+$ui-highlight-color: lighten(#a1acd1, 15%); // vibrant #3
+$ui-secondary-color: #dbdbdb; // lightest #7
+$ui-primary-color: #ebebeb; // lighter #0
+$ui-primary-color-alt: #c4c4c4; // darker, for external pages #2
+
+@import 'application';
+
+
+.display-name {
+  color: lighten($ui-highlight-color, 50%);
+}
+
+.status__content {
+  color: lighten($ui-primary-color, 6%) !important;
+}
+
+.status__display-name strong {
+  color: lighten($ui-primary-color, 15%) !important;
+}
+
+/* Don't show outline around statuses if we're in
+ * mouse or touch mode (rather than keyboard) */
+ [data-whatinput="mouse"], [data-whatinput="touch"] {
+  .status__content:focus, .status:focus,
+  .status__wrapper:focus, .status__content__text:focus {
+    outline: none;
+  }
+}
+
+/* Less emphatic show more */
+.status__content__read-more-button {
+  font-size: 14px;
+  color: $dark-text-color;
+
+  .status__prepend-icon {
+    padding-right: 4px;
+  }
+}
+
+/* Show a little arrowey thing after the time in a
+ * status to signal that you can click it to see
+ * a detailed view */
+.status time:after,
+.detailed-status__datetime span:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\00a0\00a0\f08e";
+}
+
+/* Don't display the elephant mascot (we have our
+ * own, thanks) */
+ .drawer__inner__mastodon {
+  display: none;
+}
+
+/* Let the compose area/drawer be short, but
+ * expand if necessary */
+ .drawer .drawer__inner {
+  overflow: visible;
+  height:inherit;
+  background-image: none;
+}
+.drawer__pager {
+  overflow-y:auto;
+}

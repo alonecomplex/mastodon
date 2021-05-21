@@ -7,3 +7,4 @@ ubuntu-light: styles/ubuntu-light.scss
 pastel-gradient: styles/pastel-gradient.scss
 merveilies: styles/merveilies.scss
 royal-tenenbaums: styles/royal-tenenbaums.scss
+test: styles/test.scss
