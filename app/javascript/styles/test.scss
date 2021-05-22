@@ -16,7 +16,7 @@ $ui-primary-color-alt: #535353; // darker, for external pages #2
 }
 
 .status__display-name strong {
-  color: $ui-primary-color;
+  color: $ui-highlight-color;
 }
 
 /* Don't show outline around statuses if we're in
