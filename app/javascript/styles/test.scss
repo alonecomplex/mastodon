@@ -1,22 +1,22 @@
 $ui-base-color: darken(#838383, 15%); // darkest #1
 $ui-highlight-color: lighten(#5e6c9c, 15%); // vibrant #3
-$ui-secondary-color: #838383; // lightest #7
-$ui-primary-color: #838383; // lighter #0
-$ui-primary-color-alt: #838383; // darker, for external pages #2
+$ui-secondary-color: #cfcfcf; // lightest #7
+$ui-primary-color: #98a6d3; // lighter #0
+$ui-primary-color-alt: #535353; // darker, for external pages #2
 
 @import 'application';
 
 
 .display-name {
-  color: lighten($ui-highlight-color, 50%);
+  color: $ui-highlight-color;
 }
 
 .status__content {
-  color: lighten($ui-primary-color, 6%) !important;
+  color: $ui-primary-color;
 }
 
 .status__display-name strong {
-  color: lighten($ui-primary-color, 15%) !important;
+  color: $ui-primary-color;
 }
 
 /* Don't show outline around statuses if we're in
